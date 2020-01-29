@@ -1,7 +1,94 @@
-h1 {
-    color: darkred;
+header {
+    background-color: #5973b1;
 }
 
-li {
-    color: darkslategray;
+.logo__img {
+    margin: 7px;
+}
+
+.contacts__phone {
+    font-size: 21px;
+    font-family: "Roboto";
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    position: absolute;
+    left: 907px;
+    top: 20px;
+}
+
+.contacts__workhours {
+    font-size: 14px;
+    font-family: "Roboto";
+    color: rgba(255, 255, 255, 0.702);
+    font-weight: bold;
+    position: absolute;
+    left: 978px;
+    top: 46px;
+}
+
+.menubar__content {
+    list-style-type: none;
+}
+
+.menubar__link {
+    text-decoration: none;
+    font-size: 12px;
+    font-family: "Roboto";
+    color: rgb(89, 114, 177);
+    font-weight: bold;
+    /*position: absolute;
+    left: 56.547px;
+    top: 201.5px;*/
+}
+
+.tariff__options {
+    list-style-type: none;
+}
+
+.tariff__descr-text {
+    list-style-type: square;
+}
+
+.news__content {
+    list-style-type: none;
+}
+
+.tariff__icon-img {
+    background-color: #5972b1;
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 50%;
+}
+
+footer {
+    background-color: #5972b1;
+}
+
+.footer__img-pic {
+    position: absolute;
+    left: 490px;
+    top: 2100px;
+}
+
+.socil-links-title {
+    font-size: 14px;
+    font-family: "Roboto";
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    line-height: 3.857;
+    position: absolute;
+    left: 926px;
+    top: 2080px;
+    z-index: 13;
+}
+
+ul.social-links-list li {
+    list-style-type: none;
+    display: inline-block;
+    position: absolute;
+    left: 926px;
+    top: 2120px;
+    margin: 5px;
 }
