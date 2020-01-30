@@ -1,9 +1,25 @@
-header {
+.wrapper {
+    overflow: hidden;
+    min-height: 1100px;
+}
+
+body {
+    margin: 0px;
+}
+
+.conteiner {
     background-color: #5973b1;
+    position: relative;
+    margin: 0px auto;
+    width: 1100px;
+    height: 76px;
 }
 
 .logo__img {
-    margin: 7px;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    max-height: 100%;
 }
 
 .contacts__phone {
@@ -12,8 +28,8 @@ header {
     color: rgb(255, 255, 255);
     font-weight: bold;
     position: absolute;
-    left: 907px;
-    top: 20px;
+    top: 10px;
+    right: 0;
 }
 
 .contacts__workhours {
@@ -53,10 +69,23 @@ header {
     list-style-type: none;
 }
 
+.news__icon-img {
+    position: absolute;
+    max-height: 100%;
+    border-radius: 50%;
+}
+
+.news__content p {}
+
+.news__date {
+    font-size: 14px;
+    line-height: 21px;
+    color: #656464;
+}
+
 .tariff__icon-img {
     background-color: #5972b1;
-    width: 30px;
-    height: 30px;
+    max-height: 100%;
     padding: 10px;
     margin: 5px;
     border-radius: 50%;
@@ -68,6 +97,7 @@ footer {
 
 .footer__img-pic {
     position: absolute;
+    max-height: 100%;
     left: 490px;
     top: 2100px;
 }
@@ -85,9 +115,10 @@ footer {
 }
 
 ul.social-links-list li {
+    position: absolute;
     list-style-type: none;
     display: inline-block;
-    position: absolute;
+    vertical-align: middle;
     left: 926px;
     top: 2120px;
     margin: 5px;
