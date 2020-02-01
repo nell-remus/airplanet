@@ -36,9 +36,9 @@ img {
 }
 
 .conteiner {
-    position: relative;
     margin: 0 auto;
     width: 1100px;
+    position: relative;
 }
 
 .tariff__description {
@@ -150,9 +150,25 @@ img {
     list-style-type: none;
 }
 
+.news__icon {
+    display: inline-block;
+    margin-right: 0;
+    position: relative;
+    width: 185px;
+    height: 185px;
+}
+
+.liniy {
+    display: inline-block;
+    margin-right: 0;
+}
+
 .news__icon-img {
     position: absolute;
     border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
 }
 
 .news__content p {}
@@ -173,6 +189,9 @@ img {
 
 footer {
     background-color: #5972b1;
+    margin: 0 auto;
+    max-width: 1100px;
+    height: 75px;
 }
 
 .footer__img-pic {
