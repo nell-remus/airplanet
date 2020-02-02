@@ -70,7 +70,10 @@
                                         </ul>
                                     </div>
                                 </div>
-                                <p class="tariff_price">$19</p>
+                                <div class="tariff__price">
+                                    <div class="price-currency">&#36;</div>
+                                    <div class="price">19</div>
+                                </div>
                             </li>
                             <!--тариф, первый квадрат конец-->
 
@@ -92,7 +95,10 @@
                                         </ul>
                                     </div>
                                 </div>
-                                <p>$39</p>
+                                <div class="tariff__price">
+                                    <div class="price-currency">&#36;</div>
+                                    <div class="price">39</div>
+                                </div>
                             </li>
                             <!--тариф, второй квадрат конец-->
 
@@ -113,8 +119,12 @@
                                             <li class="description__text">Детское кресло</li>
                                         </ul>
                                     </div>
+                                    <div class="tariff__price">
+                                        <div class="price-currency">&#36;</div>
+                                        <div class="price">99</div>
+                                    </div>
+
                                 </div>
-                                <p>$99</p>
                             </li>
                             <!--тариф, третий квадрат конец-->
                         </ul>
@@ -185,32 +195,37 @@
                             Страница 1 из 7
                         </div>
                         <div class="pagination__controlls">
-                            <a href="#" class="pagination__left">
-                                <</a>
-                                    <ul class="pagination__list">
-                                        <li class="pagination__item">
-                                            <a href="#" class="pagination__link">1</a>
-                                        </li>
-                                        <li class="pagination__item">
-                                            <a href="#" class="pagination__link">2</a>
-                                        </li>
-                                        <li class="pagination__item">
-                                            <a href="#" class="pagination__link">3</a>
-                                        </li>
-                                        <li class="pagination__item">
-                                            <a href="#" class="pagination__link">4</a>
-                                        </li>
-                                        <li class="pagination__item">
-                                            <a href="#" class="pagination__link">5</a>
-                                        </li>
-                                        <li class="pagination__item">
-                                            <a href="#" class="pagination__link">6</a>
-                                        </li>
-                                        <li class="pagination__item">
-                                            <a href="#" class="pagination__link">7</a>
-                                        </li>
-                                    </ul>
-                                    <a href="#" class="pagination__right">></a>
+
+                            <ul class="pagination__list">
+                                <li class="pagination__item">
+                                    <a href="#" class="pagination__link left">&lt;</a>
+                                </li>
+                                <li class="pagination__item">
+                                    <a href="#" class="pagination__link active">1</a>
+                                </li>
+                                <li class="pagination__item">
+                                    <a href="#" class="pagination__link">2</a>
+                                </li>
+                                <li class="pagination__item">
+                                    <a href="#" class="pagination__link">3</a>
+                                </li>
+                                <li class="pagination__item">
+                                    <a href="#" class="pagination__link">4</a>
+                                </li>
+                                <li class="pagination__item">
+                                    <a href="#" class="pagination__link">5</a>
+                                </li>
+                                <li class="pagination__item">
+                                    <a href="#" class="pagination__link">6</a>
+                                </li>
+                                <li class="pagination__item">
+                                    <a href="#" class="pagination__link">7</a>
+                                </li>
+                                <li class="pagination__item">
+                                    <a href="#" class="pagination__link right">&gt;</a>
+                                </li>
+                            </ul>
+
                         </div>
                     </div>
                     <!--кейс 'нумерация страниц' конец-->
@@ -219,16 +234,15 @@
             <!--кейс нижний колонтитул начало-->
             <footer class="footer">
                 <div class="footer__autor">
-                    <p class="autor-text">Сделано со старанием и немного муками </p>
-                    <p class="autor-text">на курсе "Основы верстки" в <a href="https://loftschool.com" class="autor-text-link">LoftSchool</a></p>
-                    <p class="autor-text">Автор работы: <a href="https://vk.com/nell_remus" class="autor-text-link">Груздева Алёна</a></p>
+                    <div class="autor__message">Сделано со старанием и немного муками на курсе "Основы верстки" в <a href="https://loftschool.com" class="autor__message-link">LoftSchool</a></div>
+                    <div class="autor__name">Автор работы: <a href="https://vk.com/nell_remus" class="autor__name-link">Груздева Алёна</a></div>
                 </div>
                 <div class="footer__img">
                     <img src="img/logo.png" alt="AIR PLANET" class="footer__img-pic">
                 </div>
                 <div class="footer__socil-links">
-                    <div class="socil-links-title">Наши социальные сети</div>
-                    <ul class="social-links-list">
+                    <div class="socil-links__title">Наши социальные сети</div>
+                    <ul class="social-links__list">
                         <li class="social-links">
                             <a href="#" class="links">
                                 <img src="./img/social-links/vk.png" alt="VK" class="links-pic">

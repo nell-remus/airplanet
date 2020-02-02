@@ -94,7 +94,7 @@ img {
 }
 
 .menubar__content {
-    list-style-type: none;
+    text-decoration: none;
 }
 
 .menubar__item {
@@ -117,6 +117,10 @@ img {
     height: 18px;
 }
 
+.menubar__link {
+    text-decoration: none;
+}
+
 .menubar__item--icon--main .menubar__link:before {
     background-image: url('./img/menubar/main_icon.png');
 }
@@ -127,13 +131,13 @@ img {
 
 .menubar__item--icon--team .menubar__link:before {
     background-image: url('./img/menubar/team_icon.png');
-    list-style-type: none;
 }
 
-.tariff__options {
-    margin-left: auto;
-    margin-right: 220px;
-}
+
+/*кейс 'ТАРИФЫ' начало*/
+
+
+/*ГЛАВНЫЙ ЗАГОЛОВОК*/
 
 .tariff__main-title {
     position: relative;
@@ -145,13 +149,52 @@ img {
     color: #262424;
     top: 8px;
     left: 200px;
+    margin-bottom: 70px;
 }
 
+
+/*ТРИ БЛОКА ТАРИФОВ ОБЩИЕ ПРАВИЛА*/
+
+.tariff__options {
+    margin-left: 218px;
+}
+
+
+/*БЛОК ТАРИФА*/
+
+.tariff__opt-variation {
+    display: inline-block;
+    width: 255px;
+    height: 455px;
+    vertical-align: text-bottom;
+    margin-left: 0;
+}
+
+
+/*БЛОК КАРТИНКИ ТАРИФА*/
+
+.tariff__icon {
+    position: relative;
+    width: 255px;
+    height: 50px;
+    margin-left: 95px;
+}
+
+.tariff__icon-img {
+    background-color: #5972b1;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 50%;
+}
+
+
+/*БЛОК НАИМЕНОВАНИЯ ТАРИФА*/
+
 .tariff__name {
-    width: 190px;
+    width: 255px;
     height: 10px;
     font-family: Roboto;
-    font-size: 11px;
+    font-size: 15px;
     font-weight: bold;
     text-transform: uppercase;
     text-align: center;
@@ -181,39 +224,70 @@ img {
     color: #262424;
 }
 
-.tariff__opt-variation {
+.tariff__price {
+    text-align: center;
+}
+
+.price-currency {
     display: inline-block;
-    width: 255px;
-    height: 455px;
-    vertical-align: text-bottom;
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: bold;
+    color: #262626;
+}
+
+.price {
+    display: inline-block;
+    font-family: Roboto;
+    font-size: 40px;
+    color: #262626;
+}
+
+
+/*БЛОК 'НОВОСТИ'*/
+
+
+/*БЛОК 'НОВОСТИ' ЗАГОЛОВОК*/
+
+.news__main-title {
+    height: 60px;
+    font-family: Roboto;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: left;
+    color: #262424;
+    margin-top: 10px;
+    margin-bottom: 10x;
+}
+
+.news {
+    padding-left: 180px;
+}
+
+.news__content-in-seq {
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .news__content {
+    display: inline-block;
     list-style-type: none;
-    display: inline;
-    height: 165px;
-    width: 645px;
-    vertical-align: middle;
+    vertical-align: top;
 }
 
 .news__icon {
     display: inline-block;
-    margin-right: 0;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
     position: relative;
     width: 185px;
     height: 185px;
 }
 
-.social-links {
-    width: 20px;
-    height: 20px;
-    color: #d4ddf2;
-    border-radius: 50%;
-    position: absolute;
-}
-
 .news__icon-img {
-    position: absolute;
+    display: inline-block;
+    margin: 0 0 0 0;
+    position: relative;
     border-radius: 50%;
     top: 50%;
     left: 50%;
@@ -221,17 +295,30 @@ img {
 }
 
 .news__date {
+    font-family: Roboto;
     font-size: 14px;
     line-height: 21px;
     color: #656464;
+    margin-bottom: 2px;
 }
 
-.tariff__icon-img {
-    background-color: #5972b1;
-    max-height: 100%;
-    padding: 10px;
-    margin: 5px;
-    border-radius: 50%;
+.news__title {
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: left;
+    color: #262424;
+    margin-top: 7px;
+    margin-bottom: 15px;
+}
+
+.news__content p {
+    width: 650px;
+    height: 165px;
+    font-family: Roboto;
+    font-size: 18px;
+    text-align: left;
+    color: #262424;
 }
 
 footer {
@@ -242,41 +329,117 @@ footer {
 }
 
 .footer__autor {
-    display: inline;
+    position: relative;
+    display: inline-block;
+    width: 300px;
+    height: 50px;
+    text-align: left;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.autor__message,
+.autor__name {
+    font-family: Roboto;
+    font-size: 14px;
+    color: #fff;
+}
+
+.autor__message-link,
+.autor__name-link {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
 }
 
 .footer__img {
-    display: inline;
+    display: inline-block;
+    margin-left: 185px;
 }
 
 .footer__socil-links {
-    display: inline;
+    display: inline-block;
+    margin-left: 230px;
 }
 
-.socil-links-title {
+
+/*СОЦИАЛЬНЫЕ СЕТИ*/
+
+
+/*СОЦИАЛЬНЫЙ СЕТИ -- ЗАГОЛОВОК*/
+
+.socil-links__title {
     font-size: 14px;
     font-family: "Roboto";
     color: rgb(255, 255, 255);
     font-weight: bold;
-    line-height: 3.857;
-    /*position: relative;*/
+    position: relative;
+    margin-bottom: 10px;
 }
 
+.social-links {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    height: 20px;
+    width: 20px;
+    background-color: #fff;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+
+}
+.links-pic {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+.pagination {
+    height: 55px;
+    width: 1100px;
+    position: relative;
+    vertical-align: middle;
+    text-align: center;
+    border: 450px;
+}
+.pagination__display {
+    display: inline-block;
+    font-family: Roboto;
+    font-size: 14px;
+    color: #656464;
+}
 .pagination__controlls {
     display: inline-block;
     margin: 0 auto;
 }
-
 .pagination__item {
     display: inline-block;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    color: #262424;
 }
-
-ul.social-links-list li {
-    position: relative;
-    list-style-type: none;
-    display: inline-block;
-    vertical-align: middle;
-    /*left: 926px;
-    top: 2120px;*/
-    margin: 5px;
+.pagination__link {
+    text-decoration: none;
+    padding: 10px 10px;
+    color: #000;
+}
+.left {
+    color: #bfbfbf;
+}
+.pagination .active {
+    background-color: #5972b1;
+    color: #fff;
+    border-radius: 5px;
+}
+.pagination a:hover:not(.active) {
+    background-color: #fff;
+    border-radius: 5px;
+    color: #000;
 }
