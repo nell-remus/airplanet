@@ -7,13 +7,13 @@
     min-height: 1100px;
 }
 
-.page-content {
-    width: 1100px;
-    margin: 0 auto;
-}
-
 body {
     margin: 0;
+}
+
+.page-content {
+    margin: 0 auto;
+    width: 1100px;
 }
 
 ul {
@@ -26,32 +26,28 @@ img {
     max-width: 100%;
 }
 
+.main-block {
+    display: inline-block;
+}
+
 .header {
     background-color: #5973b1;
-    margin: 0 auto;
+    padding-top: 20px;
+    padding-left: 20px;
 }
 
 .header__container {
     height: 76px;
+    width: 1100px;
 }
 
 .conteiner {
     margin: 0 auto;
-    width: 1100px;
     position: relative;
-}
-
-.tariff__description {
-    width: 185px;
-    height: 150px;
-    vertical-align: text-bottom;
-    margin: 45px;
 }
 
 .logo__img {
     position: absolute;
-    padding-top: 20px;
-    padding-left: 20px;
 }
 
 .banner {
@@ -62,13 +58,10 @@ img {
     position: relative;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 13px;
-    left: 5px;
 }
 
 .contacts {
     position: absolute;
-    padding-top: 20px;
     right: 20px;
     text-align: right;
 }
@@ -89,7 +82,8 @@ img {
 .menubar {
     display: inline-block;
     vertical-align: top;
-    width: 190px;
+    width: 170px;
+    height: 1700px;
     margin-top: 45px;
 }
 
@@ -109,7 +103,19 @@ img {
     margin-bottom: 20px;
 }
 
+.menubar__item:last-child {
+    margin-bottom: 0;
+}
+
 .menubar__link:before {
+    content: "";
+    display: inline-block;
+    margin-right: 13px;
+    width: 23px;
+    height: 18px;
+}
+
+.menubar__link--visited:before {
     content: "";
     display: inline-block;
     margin-right: 13px;
@@ -119,9 +125,14 @@ img {
 
 .menubar__link {
     text-decoration: none;
+    color: #5972b1;
 }
 
-.menubar__item--icon--main .menubar__link:before {
+.menubar__link:visited {
+    color: #5972b1;
+}
+
+.menubar__item--icon--main .menubar__link--visited:before {
     background-image: url('./img/menubar/main_icon.png');
 }
 
@@ -133,30 +144,27 @@ img {
     background-image: url('./img/menubar/team_icon.png');
 }
 
+.menubar__link--visited {
+    text-decoration: none;
+    color: #000;
+}
+
 
 /*кейс 'ТАРИФЫ' начало*/
 
-
-/*ГЛАВНЫЙ ЗАГОЛОВОК*/
+.tariff {
+    margin-bottom: 105px;
+}
 
 .tariff__main-title {
     position: relative;
     width: 181px;
-    height: 47px;
+    height: 60px;
     font-family: Roboto;
     font-size: 49px;
     font-weight: bold;
     color: #262424;
-    top: 8px;
-    left: 200px;
     margin-bottom: 70px;
-}
-
-
-/*ТРИ БЛОКА ТАРИФОВ ОБЩИЕ ПРАВИЛА*/
-
-.tariff__options {
-    margin-left: 218px;
 }
 
 
@@ -165,7 +173,6 @@ img {
 .tariff__opt-variation {
     display: inline-block;
     width: 255px;
-    height: 455px;
     vertical-align: text-bottom;
     margin-left: 0;
 }
@@ -175,20 +182,22 @@ img {
 
 .tariff__icon {
     position: relative;
-    width: 255px;
-    height: 50px;
-    margin-left: 95px;
+    width: 70px;
+    height: 70px;
+    background-color: #5972b1;
+    border-radius: 50%;
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 35px;
 }
 
 .tariff__icon-img {
-    background-color: #5972b1;
-    padding: 10px;
-    margin: 5px;
-    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
-
-
-/*БЛОК НАИМЕНОВАНИЯ ТАРИФА*/
 
 .tariff__name {
     width: 255px;
@@ -199,21 +208,25 @@ img {
     text-transform: uppercase;
     text-align: center;
     color: #262626;
-    margin-top: 35px;
+    margin-top: 0;
     margin-left: 0;
     margin-right: 0;
+    margin-bottom: 25px;
 }
 
 .tariff__description {
     width: 190px;
     height: 150px;
     vertical-align: middle;
+    margin: 0 auto;
 }
 
 .tariff__description p {
     text-align: center;
     font-family: Roboto;
     font-size: 18px;
+    margin-top: 0;
+    margin-bottom: 20px;
 }
 
 .description__text {
@@ -256,28 +269,24 @@ img {
     font-weight: bold;
     text-align: left;
     color: #262424;
-    margin-top: 10px;
+    margin-top: 0;
     margin-bottom: 10x;
 }
 
-.news {
-    padding-left: 180px;
-}
-
-.news__content-in-seq {
-    padding-top: 10px;
-    padding-bottom: 10px;
+.news__box {
+    list-style-type: none;
+    vertical-align: top;
+    margin-top: 0;
+    margin-bottom: 50px;
 }
 
 .news__content {
     display: inline-block;
-    list-style-type: none;
-    vertical-align: top;
 }
 
 .news__icon {
     display: inline-block;
-    margin: 0 0 0 0;
+    margin: 0 15px 0 0;
     padding: 0 0 0 0;
     position: relative;
     width: 185px;
@@ -299,7 +308,7 @@ img {
     font-size: 14px;
     line-height: 21px;
     color: #656464;
-    margin-bottom: 2px;
+    margin-bottom: 15px;
 }
 
 .news__title {
@@ -308,8 +317,8 @@ img {
     font-weight: bold;
     text-align: left;
     color: #262424;
-    margin-top: 7px;
-    margin-bottom: 15px;
+    margin-top: 0;
+    margin-bottom: 25px;
 }
 
 .news__content p {
@@ -321,8 +330,11 @@ img {
     color: #262424;
 }
 
-footer {
+.footer__conteiner {
     background-color: #5972b1;
+}
+
+footer {
     margin: 0 auto;
     max-width: 1100px;
     height: 75px;
@@ -388,35 +400,44 @@ footer {
     margin-right: 10px;
 }
 
-
-}
 .links-pic {
+    position: absolute;
     display: inline-block;
     vertical-align: middle;
-    margin: 0 0 0 0;
-    padding: 0 0 0 0;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%)
 }
+
 .pagination {
-    height: 55px;
-    width: 1100px;
-    position: relative;
+    width: 920px;
     vertical-align: middle;
     text-align: center;
-    border: 450px;
+    margin-top: 0;
+    margin-bottom: 60px;
 }
+
+.pagination__list {
+    display: inline-block;
+}
+
 .pagination__display {
     display: inline-block;
     font-family: Roboto;
     font-size: 14px;
     color: #656464;
 }
+
+.pagination__item--left {
+    display: inline-block;
+    position: relative;
+}
+
 .pagination__controlls {
     display: inline-block;
     margin: 0 auto;
 }
+
 .pagination__item {
     display: inline-block;
     font-family: Roboto;
@@ -425,19 +446,23 @@ footer {
     text-align: center;
     color: #262424;
 }
+
 .pagination__link {
     text-decoration: none;
     padding: 10px 10px;
     color: #000;
 }
+
 .left {
     color: #bfbfbf;
 }
+
 .pagination .active {
     background-color: #5972b1;
     color: #fff;
     border-radius: 5px;
 }
+
 .pagination a:hover:not(.active) {
     background-color: #fff;
     border-radius: 5px;

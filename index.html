@@ -10,38 +10,38 @@
 
 <body>
     <div class="wrapper">
-        <div class="page">
-            <div class="conteiner">
-                <header class="header">
-                    <div class="conteiner header__container">
-                        <a href="#" class="logo">
-                            <img src="./img/logo.png" class="logo__img" alt="AIR PLANET">
-                        </a>
-                        <div class="contacts">
-                            <a href="tel:88000039210" class="contacts__phone">8 (800) 00-392-10</a>
-                            <div class="contacts__workhours">График работы</div>
-                        </div>
+        <div class="conteiner">
+            <header class="header">
+                <div class="conteiner header__container">
+                    <a href="#" class="logo">
+                        <img src="./img/logo.png" class="logo__img" alt="AIR PLANET">
+                    </a>
+                    <div class="contacts">
+                        <a href="tel:88000039210" class="contacts__phone">8 (800) 00-392-10</a>
+                        <div class="contacts__workhours">График работы</div>
                     </div>
-                </header>
-            </div>
-            <main class="page-content">
-                <div class="container">
-                    <!--кейс 'МЕНЮ' начало-->
-                    <nav class="menubar">
-                        <ul class="menubar__content">
-                            <li class="menubar__item menubar__item--icon--main">
-                                <a href="#" class="menubar__link">Главная</a>
-                            </li>
-                            <li class="menubar__item menubar__item--icon--feed">
-                                <a href="#" class="menubar__link">Отзывы</a>
-                            </li>
-                            <li class="menubar__item menubar__item--icon--team">
-                                <a href="#" class="menubar__link">Экипаж</a>
-                            </li>
-                        </ul>
-                    </nav>
-                    <!--кейс 'МЕНЮ' конец-->
+                </div>
+            </header>
+        </div>
+        <main class="page-content">
+            <div class="container">
+                <!--кейс 'МЕНЮ' начало-->
+                <nav class="menubar">
+                    <ul class="menubar__content">
+                        <li class="menubar__item menubar__item--icon--main">
+                            <a href="#" class="menubar__link--visited">Главная</a>
+                        </li>
+                        <li class="menubar__item menubar__item--icon--feed">
+                            <a href="#" class="menubar__link">Отзывы</a>
+                        </li>
+                        <li class="menubar__item menubar__item--icon--team">
+                            <a href="#" class="menubar__link">Экипаж</a>
+                        </li>
+                    </ul>
+                </nav>
+                <!--кейс 'МЕНЮ' конец-->
 
+                <div class="main-block">
                     <!--основная картинка-->
                     <div class="banner">
                         <img src="./img/banner.png" alt="" class="banner__img">
@@ -134,7 +134,7 @@
                     <!--кейс 'НОВОСТИ' начало-->
                     <section class="news">
                         <h1 class="news__main-title">Последние новости</h1>
-                        <ul class="news__content">
+                        <ul class="news__box">
                             <!--новости первый квадрат начало-->
                             <li class="news__content-in-seq">
                                 <div class="news__icon">
@@ -195,11 +195,10 @@
                             Страница 1 из 7
                         </div>
                         <div class="pagination__controlls">
-
+                            <div class="pagination__item--left">
+                                <a href="#" class="pagination__link left">&lt;</a>
+                            </div>
                             <ul class="pagination__list">
-                                <li class="pagination__item">
-                                    <a href="#" class="pagination__link left">&lt;</a>
-                                </li>
                                 <li class="pagination__item">
                                     <a href="#" class="pagination__link active">1</a>
                                 </li>
@@ -221,17 +220,18 @@
                                 <li class="pagination__item">
                                     <a href="#" class="pagination__link">7</a>
                                 </li>
-                                <li class="pagination__item">
-                                    <a href="#" class="pagination__link right">&gt;</a>
-                                </li>
                             </ul>
-
+                            <div class="pagination__item">
+                                <a href="#" class="pagination__link right">&gt;</a>
+                            </div>
                         </div>
                     </div>
                     <!--кейс 'нумерация страниц' конец-->
                 </div>
-            </main>
-            <!--кейс нижний колонтитул начало-->
+            </div>
+        </main>
+        <!--кейс нижний колонтитул начало-->
+        <div class="footer__conteiner">
             <footer class="footer">
                 <div class="footer__autor">
                     <div class="autor__message">Сделано со старанием и немного муками на курсе "Основы верстки" в <a href="https://loftschool.com" class="autor__message-link">LoftSchool</a></div>
@@ -266,8 +266,9 @@
                     </ul>
                 </div>
             </footer>
-            <!--кейс нижний колонтитул конец-->
         </div>
+        <!--кейс нижний колонтитул конец-->
+    </div>
     </div>
 </body>
 
