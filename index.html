@@ -3,42 +3,48 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=1100, initial-scale=1.0">
     <title>Главная страница</title>
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="./normalize.css">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/pagination.css">
 </head>
 
 <body>
     <div class="wrapper">
         <header class="header">
-            <div class="conteiner header__container">
-                <a href="#" class="logo">
+            <div class="container">
+                <a href="./index.html" class="logo">
                     <img src="./img/logo.png" class="logo__img" alt="AIR PLANET">
                 </a>
-                <div class="contacts">
+                <address class="contacts">
                     <a href="tel:88000039210" class="contacts__phone">8 (800) 00-392-10</a>
                     <div class="contacts__workhours">График работы</div>
-                </div>
+                    </address>
             </div>
         </header>
-        <main class="page-content">
-            <div class="container">
-                <!--кейс 'МЕНЮ' начало-->
-                <nav class="menubar">
-                    <ul class="menubar__content">
-                        <li class="menubar__item menubar__item--icon--main">
-                            <a href="#" class="menubar__link--visited">Главная</a>
+        <div class="wrapper__content">
+            <!--     -----S I D E B A R-----     -->
+            <aside class="sidebar">
+                <nav class="menu">
+                    <ul class="menu__list">
+                        <li class="menu__item menu__item--icon--main">
+                            <a href="./index.html" class="menu__link visited">Главная</a>
                         </li>
-                        <li class="menubar__item menubar__item--icon--feed">
-                            <a href="#" class="menubar__link">Отзывы</a>
+                        <li class="menu__item menu__item--icon--feed">
+                            <a href="./feedback.html" class="menu__link">Отзывы</a>
                         </li>
-                        <li class="menubar__item menubar__item--icon--team">
-                            <a href="#" class="menubar__link">Экипаж</a>
+                        <li class="menu__item menu__item--icon--team">
+                            <a href="./team.html" class="menu__link">Экипаж</a>
                         </li>
                     </ul>
                 </nav>
-                <!--кейс 'МЕНЮ' конец-->
-
+            </aside>
+            <!--     -----S I D E B A R-----     -->
+            <main class="page-content">
                 <div class="main-block">
                     <!--основная картинка-->
                     <div class="banner">
@@ -134,7 +140,7 @@
                         <h1 class="news__main-title">Последние новости</h1>
                         <ul class="news__box">
                             <!--новости первый квадрат начало-->
-                            <li class="news__content-in-seq">
+                            <li class="news__item single-news">
                                 <div class="news__icon">
                                     <!--первая область (картинка)-->
                                     <img src="./img/news/plane.png" alt="" class="news__icon-img">
@@ -151,7 +157,7 @@
                             <!--новости первый квадрат конец-->
 
                             <!--новости второй квадрат начало-->
-                            <li class="news__content-in-seq">
+                            <li class="news__item single-news">
                                 <div class="news__icon">
                                     <!--первая область (картинка)-->
                                     <img src="./img/news/mountains.png" alt="" class="news__icon-img">
@@ -168,7 +174,7 @@
                             <!--новости второй квадрат конец-->
 
                             <!--новости третий квадрат начало-->
-                            <li class="news__content-in-seq">
+                            <li class="news__item single-news">
                                 <div class="news__icon">
                                     <!--первая область (картинка)-->
                                     <img src="./img/news/child.png" alt="" class="news__icon-img">
@@ -186,9 +192,9 @@
                         </ul>
                     </section>
                     <!--кейс 'НОВОСТИ' конец-->
-
                     <!--кейс 'нумерация страниц' начало-->
                     <div class="pagination">
+
                         <div class="pagination__display">
                             Страница 1 из 7
                         </div>
@@ -223,14 +229,17 @@
                                 <a href="#" class="pagination__link right">&gt;</a>
                             </div>
                         </div>
+
                     </div>
                     <!--кейс 'нумерация страниц' конец-->
                 </div>
-            </div>
-        </main>
+            </main>
+
+        </div>
+
         <!--кейс нижний колонтитул начало-->
         <footer class="footer">
-            <div class="footer-conteiner">
+            <div class="container">
                 <div class="footer__autor">
                     <div class="autor__message">Сделано со старанием и немного муками на курсе "Основы верстки" в <a href="https://loftschool.com" class="autor__message-link">LoftSchool</a></div>
                     <div class="autor__name">Автор работы: <a href="https://vk.com/nell_remus" class="autor__name-link">Груздева Алёна</a></div>
@@ -266,7 +275,6 @@
             </div>
         </footer>
         <!--кейс нижний колонтитул конец-->
-    </div>
     </div>
 </body>
 
