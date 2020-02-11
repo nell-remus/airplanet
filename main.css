@@ -45,10 +45,6 @@
     color: #5972b1;
 }
 
-.menu__link:visited {
-    color: #5972b1;
-}
-
 .menu__item--icon--main .menu__link:before {
     background-image: url('./img/menubar/main_icon.png');
 }
@@ -61,7 +57,7 @@
     background-image: url('./img/menubar/team_icon.png');
 }
 
-.visited {
+.menu__link.visited {
     text-decoration: none;
     color: #000;
 }

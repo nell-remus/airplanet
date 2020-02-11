@@ -1,7 +1,7 @@
-.page {
+.page__content {
     display: flex;
+    justify-content: center;
     padding-top: 45px;
-    width: 1100px;
 }
 
 .sidebar {
@@ -41,10 +41,6 @@
     color: #5972b1;
 }
 
-.menu__link:visited {
-    color: #5972b1;
-}
-
 .menu__item--icon--main .menu__link:before {
     background-image: url('./img/menubar/main_icon_blue.png');
 }
@@ -57,7 +53,7 @@
     background-image: url('./img/menubar/team_icon_black.png');
 }
 
-.visited {
+.menu__link.visited {
     text-decoration: none;
     color: #000;
 }
@@ -105,6 +101,7 @@
 }
 
 .team__staff {
+    max-width: 860px;
     display: flex;
     list-style-type: none;
     flex-wrap: wrap;
@@ -115,7 +112,7 @@
 .staff__person {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
 }
 
 .person__icon {
@@ -158,13 +155,32 @@
 .partner__list {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     flex-wrap: wrap;
+    max-width: 860px;
 }
 
 .list__links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     list-style-type: none;
-    margin-right: 120px;
-    margin-bottom: 60px;
+    margin-right: 60px;
+    margin-bottom: 30px;
+    height: 165px;
+    width: 165px;
+}
+
+.list__links:hover {
+    background-image: url(./img/partner/bingair.png) no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+    margin-right: 60px;
+    margin-bottom: 30px;
+    height: 165px;
+    width: 165px;
 }
 
 .partner__links:last-child {

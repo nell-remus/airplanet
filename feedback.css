@@ -1,9 +1,3 @@
-.page {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
 .page-content {
     display: flex;
     justify-content: center;
@@ -47,10 +41,6 @@
     color: #5972b1;
 }
 
-.menu__link:visited {
-    color: #5972b1;
-}
-
 .menu__item--icon--main .menu__link:before {
     background-image: url('./img/menubar/main_icon_blue.png');
 }
@@ -63,7 +53,7 @@
     background-image: url('./img/menubar/team_icon.png');
 }
 
-.visited {
+.menu__link.visited {
     text-decoration: none;
     color: #000;
 }
@@ -236,6 +226,10 @@
 .form__title {
     margin-top: 0;
     margin-bottom: 27px;
+    font-size: 49px;
+    font-family: "Roboto";
+    color: rgb(38, 36, 36);
+    font-weight: bold;
 }
 
 .form__elem-title {
@@ -245,8 +239,11 @@
 
 .form__row {
     display: flex;
+    justify-content: start;
     flex-wrap: wrap;
     margin-bottom: 10px;
+    font-size: 14px;
+    font-family: "Roboto";
 }
 
 .form__row:last-child {
@@ -254,39 +251,74 @@
 }
 
 .form__input--textarea {
-    resize: vertical;
-}
-
-.form__input:focus {
-    outline: none;
-    border-color: #5972b1;
-}
-
-.form__input {
-    border: 3px solid transparent;
+    color: rgb(38, 36, 36);
+    border: 3px #5972b1;
+    padding-top: 10px;
+    padding-left: 10px;
+    resize: none;
 }
 
 .form__block {
-    flex: 1;
-    margin-left: 23px;
+    margin-right: 25px;
+    margin-bottom: 20px;
+    flex-grow: 1;
 }
 
-.form__block:first-child {
-    margin-left: 0;
+.form__block:nth-child(2n),
+.form__block:last-child {
+    margin-right: 0;
 }
 
 .form__input {
     background: #fff;
     width: 100%;
     padding: 12px 9px;
+    border: none;
 }
 
 .form__buttons {
     border-radius: 5%;
 }
 
+.switch-controls__radio {
+    margin-right: 5px;
+}
+
+.switch-controls__title {
+    font-size: 14px;
+    font-family: "Roboto";
+}
+
+.switch-contols {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.switch-controls__buttons {
+    display: flex;
+    justify-content: space-around;
+}
+
+.switch-controls__elem:active {
+    color: #5972b1;
+}
+
+.radio {
+    margin-right: 20px;
+}
+
 .btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20px 20px 20px;
+    width: 155px;
     background-color: #5972b1;
     color: #fff;
     text-transform: uppercase;
+    cursor: pointer;
+    border: none;
+    border-radius: 5%;
+    font-weight: bold;
 }

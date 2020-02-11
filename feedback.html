@@ -192,35 +192,29 @@
                             <div class="form__content">
                                 <div class="form__row">
                                     <label class="form__block">
-                                  <div class="form__elem-title">Ваше имя</div>
-                                  <input type="text" class="form__input" placeholder="Андрей">
-                              </label>
+                                        <div class="form__elem-title">Ваше имя</div>
+                                     <input type="text" class="form__input text" placeholder="Андрей">
+                                    </label>
                                     <label class="form__block">
-                                    <div class="form__elem-title">Ссылка на профиль VK</div>
-                                    <input type="text" class="form__input" placeholder="vk.com/example">
-                              </label>
+                                        <div class="form__elem-title">Ссылка на профиль VK</div>
+                                        <input type="text" class="form__input text" placeholder="vk.com/example">
+                                    </label>
                                     <label class="form__block">
                                       <div class="form__elem-title">Текст отзыва</div>
-                                      <input type="text" class="form__input--textarea" placeholder="Мне понравилось">
-                              </label>
+                                      <textarea name="text" class="form__input--textarea" style="width: 560px; height: 90px;">Мне понравилось</textarea>
+                                    </label>
                                 </div>
                             </div>
                             <div class="form__buttons-row">
+                                <div class="switch-controls__title">Отображать фото в отзыве?</div>
                                 <div class="switch-contols">
-                                    <div class="switch-controls__title">Отображать фото в отзыве?</div>
                                     <div class="switch-controls__buttons">
-                                        <label class="switch-controls__elem">
-                                    <input type="radio" name="" id="" class="switch-controls__radio">
-                                    <div class="switch-controls__elem-title">Да</div>
-                                        </label>
-                                        <label class="switch-controls__elem">
-                                    <input type="radio" name="" id="" class="switch-controls__radio">
-                                    <div class="switch-controls__elem-title">Нет</div>
-                                  </label>
+                                        <div class="radio"><label class="switch-controls__elem"><input type="radio" name="showphoto" id="" class="switch-controls__radio">Да</label></div>
+                                        <div class="radio"><label class="switch-controls__elem"><input type="radio" name="showphoto" id="" class="switch-controls__radio">Нет</label></div>
                                     </div>
-                                </div>
-                                <div class="form__buttons">
-                                    <input type="submit" class="btn" value="ОТПРАВИТЬ">
+                                    <div class="form__buttons">
+                                        <button class="btn">отправить<img src="./img/main_icon_white.png"></button>
+                                    </div>
                                 </div>
                             </div>
                         </form>
