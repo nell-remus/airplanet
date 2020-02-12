@@ -58,6 +58,10 @@
     color: #000;
 }
 
+.menu__link:hover {
+    color: black;
+}
+
 .breadcrumbs {
     margin-bottom: 27px;
 }
@@ -122,6 +126,96 @@
     margin-bottom: 18px;
 }
 
+.alex::after {
+    content: "Алексей";
+    font-family: "Roboto";
+    font-size: 24px;
+    line-height: 160px;
+    font-weight: bold;
+    color: #fff;
+    position: absolute;
+    text-align: center;
+    width: 168px;
+    height: 168px;
+    background-color: rgb(89, 115, 177, 0.5);
+    border-radius: 50%;
+}
+
+.inna::after {
+    content: "Инна";
+    font-family: "Roboto";
+    font-size: 24px;
+    line-height: 160px;
+    font-weight: bold;
+    color: #fff;
+    position: absolute;
+    text-align: center;
+    width: 168px;
+    height: 168px;
+    background-color: rgb(89, 115, 177, 0.5);
+    border-radius: 50%;
+}
+
+.boris::after {
+    content: "Борис";
+    font-family: "Roboto";
+    font-size: 24px;
+    line-height: 160px;
+    font-weight: bold;
+    color: #fff;
+    position: absolute;
+    text-align: center;
+    width: 168px;
+    height: 168px;
+    background-color: rgb(89, 115, 177, 0.5);
+    border-radius: 50%;
+}
+
+.elina::after {
+    content: "Элина";
+    font-family: "Roboto";
+    font-size: 24px;
+    line-height: 160px;
+    font-weight: bold;
+    color: #fff;
+    position: absolute;
+    text-align: center;
+    width: 168px;
+    height: 168px;
+    background-color: rgb(89, 115, 177, 0.5);
+    border-radius: 50%;
+}
+
+.elena::after {
+    content: "Елена";
+    font-family: "Roboto";
+    font-size: 24px;
+    line-height: 160px;
+    font-weight: bold;
+    color: #fff;
+    position: absolute;
+    text-align: center;
+    width: 168px;
+    height: 168px;
+    background-color: rgb(89, 115, 177, 0.5);
+    border-radius: 50%;
+}
+
+.yuri::after {
+    content: "Юрий";
+    font-family: "Roboto";
+    font-size: 24px;
+    line-height: 160px;
+    font-weight: bold;
+    color: #fff;
+    position: absolute;
+    text-align: center;
+    width: 168px;
+    height: 168px;
+    background-color: rgb(89, 115, 177, 0.5);
+    border-radius: 50%;
+}
+
 .person__icon-img {
     justify-content: center;
     align-items: center;
@@ -181,6 +275,14 @@
     margin-bottom: 30px;
     height: 165px;
     width: 165px;
+}
+
+.partner__links {
+    filter: grayscale(100%);
+}
+
+.partner__links:hover {
+    filter: none;
 }
 
 .partner__links:last-child {

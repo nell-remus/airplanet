@@ -57,9 +57,12 @@
     background-image: url('./img/menubar/team_icon.png');
 }
 
-.menu__link.visited {
-    text-decoration: none;
-    color: #000;
+.menu__link:hover {
+    color: black;
+}
+
+.visited {
+    color: black;
 }
 
 
@@ -128,6 +131,10 @@
     margin-bottom: 20px;
 }
 
+.description {
+    list-style-position: inside;
+}
+
 .description__text {
     list-style-type: square;
     font-family: Roboto;
@@ -162,10 +169,12 @@
     display: flex;
     align-items: center;
     margin-bottom: 60px;
+    border-bottom: 2px solid rgb(244, 244, 244);
 }
 
 .single-news:last-child {
     margin-bottom: 0;
+    border-bottom: none;
 }
 
 .news__main-title {

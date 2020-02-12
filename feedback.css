@@ -58,6 +58,10 @@
     color: #000;
 }
 
+.menu__link:hover {
+    color: black;
+}
+
 .breadcrumbs {
     margin-bottom: 27px;
 }
@@ -221,6 +225,7 @@
     padding-bottom: 50px;
     width: 700px;
     font-family: "Roboto";
+    margin-bottom: 60px;
 }
 
 .form__title {
@@ -321,4 +326,9 @@
     border: none;
     border-radius: 5%;
     font-weight: bold;
+}
+
+.btn:after {
+    content: url(./img/main_icon_white.png);
+    margin-left: 10px;
 }
