@@ -5,98 +5,135 @@
 }
 
 .sidebar {
-    margin-right: 72px;
+    margin-bottom: 28px;
 }
 
 .menu__list {
     text-decoration: none;
+    display: flex;
 }
 
 .menu__item {
     list-style-type: none;
     text-decoration: none;
-    font-size: 12px;
+    font-size: 14px;
     font-family: "Roboto";
     color: rgb(89, 114, 177);
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 2px;
-    margin-bottom: 20px;
+    margin-right: 130px;
 }
 
 .menu__item:last-child {
-    margin-bottom: 0;
+    margin-right: 0;
 }
 
-.menu__link:before {
-    content: "";
-    display: inline-block;
-    margin-right: 13px;
-    width: 23px;
-    height: 18px;
-}
-
+.menu__item,
 .menu__link {
     text-decoration: none;
     color: #5972b1;
 }
 
-.menu__item--icon--main .menu__link:before {
-    background-image: url('./img/menubar/main_icon_blue.png');
+.link__icon {
+    width: 23px;
+    height: 18px;
+    margin-right: 20px;
+    position: relative;
+    display: inline-block;
 }
 
-.menu__item--icon--feed .menu__link:before {
-    background-image: url('./img/menubar/feed_icon_black.png');
+.link__icon.main::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: 23px;
+    height: 18px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: url('./img/menubar/menu_sprites.png') -10px -48px;
+    opacity: 1;
+    transition: .3s;
 }
 
-.menu__item--icon--team .menu__link:before {
-    background-image: url('./img/menubar/team_icon.png');
+.link__icon.main::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: 23px;
+    height: 18px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: url('./img/menubar/menu_sprites.png') -53px -48px;
+    opacity: 0;
+    transition: .3s;
 }
 
-.menu__link.visited {
-    text-decoration: none;
-    color: #000;
+.menu__item:hover .link__icon.main::before {
+    opacity: 0;
+}
+
+.menu__item:hover .link__icon.main::after {
+    opacity: 1;
+}
+
+.link__icon.feed::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: 23px;
+    height: 18px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: url('./img/menubar/menu_sprites.png') -53px -10px;
+}
+
+.link__icon.team::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: 23px;
+    height: 18px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: url('./img/menubar/menu_sprites.png') -96px -48px;
+    opacity: 1;
+    transition: .3s;
+}
+
+.link__icon.team::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: 23px;
+    height: 18px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: url('./img/menubar/menu_sprites.png') -96px -10px;
+    opacity: 0;
+    transition: .3s;
+}
+
+.menu__item:hover .team::before {
+    opacity: 0;
+}
+
+.menu__item:hover .team::after {
+    opacity: 1;
 }
 
 .menu__link:hover {
     color: black;
+    transition: .3s;
 }
 
-.breadcrumbs {
-    margin-bottom: 27px;
-}
-
-.breadcrumbs__menu {
-    margin: 0;
-    font-family: "Roboto";
-}
-
-.breadcrumbs__item,
-.breadcrumbs__link {
-    display: inline-block;
-    vertical-align: middle;
-}
-
-.breadcrumbs__item:after {
-    content: "/";
-    display: inline-block;
-    vertical-align: middle;
-}
-
-.breadcrumbs__item:last-child:after {
-    display: none;
-}
-
-.breadcrumbs__link {
-    font-size: 14px;
-    font-weight: 300;
-    font-style: italic;
-    color: #5972b1;
-}
-
-.breadcrumbs__link.active {
-    color: #000;
-    text-decoration: none;
+.menu__link.visited {
+    color: black;
 }
 
 
@@ -126,11 +163,14 @@
 
 .content {
     display: flex;
+    border-bottom: 2px solid #f4f4f4;
+    padding-bottom: 15px;
     margin-bottom: 50px;
 }
 
 .content:last-child {
     margin-bottom: 0;
+    border-bottom: none;
 }
 
 .content__icon {
@@ -151,7 +191,7 @@
     font-size: 14px;
     line-height: 21px;
     color: #656464;
-    margin-bottom: 15px;
+    margin-bottom: 13px;
 }
 
 .content__title {
@@ -161,17 +201,18 @@
     text-align: left;
     color: #262424;
     margin-top: 0;
-    margin-bottom: 25px;
+    margin-bottom: 22px;
 }
 
 .content__text {
-    width: 700px;
+    max-width: 650px;
 }
 
 .content__text p {
     font-family: Roboto;
     font-size: 18px;
     text-align: left;
+    line-height: 1.5;
     color: #262424;
 }
 
@@ -186,14 +227,22 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 48px;
-    padding-bottom: 43px;
-    background-color: #76b46f;
-    margin-bottom: 60px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+    max-width: 275px;
+    max-height: 285px;
+    background-color: #5972b1;
+    background-image: url(./img/pattern.png);
+    margin-right: 23px;
+    margin-bottom: 30px;
 }
 
 .notice p {
-    width: 625px;
+    text-align: center;
+    font-size: 17px;
+    line-height: 1.5;
     font-family: "Roboto";
     color: #fff;
 }
@@ -206,6 +255,7 @@
 .request-phone {
     color: #fff;
     font-weight: bold;
+    text-decoration: none;
 }
 
 
@@ -314,9 +364,6 @@
 }
 
 .btn {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     padding: 20px 20px 20px 20px;
     width: 155px;
     background-color: #5972b1;
@@ -324,11 +371,31 @@
     text-transform: uppercase;
     cursor: pointer;
     border: none;
-    border-radius: 5%;
     font-weight: bold;
+    border-radius: 3.5px;
+    font-size: 12px;
+    font-family: "Roboto";
 }
 
-.btn:after {
-    content: url(./img/main_icon_white.png);
+.btn:hover {
+    color: #3a5bbf;
+    background-color: #fff;
+}
+
+.btn__text::after {
+    content: "";
+    position: absolute;
     margin-left: 10px;
+    width: 15px;
+    height: 14px;
+    background: url(./img/button_sprites.png) -45px -10px;
+}
+
+.btn:hover .btn__text::after {
+    content: "";
+    position: absolute;
+    margin-left: 10px;
+    width: 15px;
+    height: 14px;
+    background: url(./img/button_sprites.png) -10px -10px;
 }

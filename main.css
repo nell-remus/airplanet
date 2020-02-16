@@ -1,67 +1,138 @@
 .wrapper__content {
     display: flex;
     justify-content: center;
-}
-
-.page-content {
-    padding-top: 15px;
+    padding-top: 27px;
 }
 
 .sidebar {
-    padding-top: 45px;
-    margin-right: 72px;
+    margin-bottom: 15px;
 }
 
 .menu__list {
     text-decoration: none;
+    display: flex;
 }
 
 .menu__item {
     list-style-type: none;
     text-decoration: none;
-    font-size: 12px;
+    font-size: 14px;
     font-family: "Roboto";
     color: rgb(89, 114, 177);
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 2px;
-    margin-bottom: 20px;
+    margin-right: 130px;
 }
 
 .menu__item:last-child {
-    margin-bottom: 0;
+    margin-right: 0;
 }
 
-.menu__link:before {
-    content: "";
-    display: inline-block;
-    margin-right: 13px;
-    width: 23px;
-    height: 18px;
-}
-
+.menu__item,
 .menu__link {
     text-decoration: none;
     color: #5972b1;
 }
 
-.menu__item--icon--main .menu__link:before {
-    background-image: url('./img/menubar/main_icon.png');
+.link__icon {
+    width: 23px;
+    height: 18px;
+    margin-right: 20px;
+    position: relative;
+    display: inline-block;
 }
 
-.menu__item--icon--feed .menu__link:before {
-    background-image: url('./img/menubar/feed_icon.png');
+.link__icon.main::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: 23px;
+    height: 18px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: url('./img/menubar/menu_sprites.png') -53px -48px;
 }
 
-.menu__item--icon--team .menu__link:before {
-    background-image: url('./img/menubar/team_icon.png');
+.link__icon.feed::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: 23px;
+    height: 18px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: url('./img/menubar/menu_sprites.png') -10px -10px;
+    opacity: 1;
+    transition: .3s;
+}
+
+.link__icon.feed::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: 23px;
+    height: 18px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: url('./img/menubar/menu_sprites.png') -53px -10px;
+    opacity: 0;
+    transition: .3s;
+}
+
+.menu__item:hover .link__icon.feed::before {
+    opacity: 0;
+}
+
+.menu__item:hover .link__icon.feed::after {
+    opacity: 1;
+}
+
+.link__icon.team::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: 23px;
+    height: 18px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: url('./img/menubar/menu_sprites.png') -96px -48px;
+    opacity: 1;
+    transition: .3s;
+}
+
+.link__icon.team::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: 23px;
+    height: 18px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: url('./img/menubar/menu_sprites.png') -96px -10px;
+    opacity: 0;
+    transition: .3s;
+}
+
+.menu__item:hover .team::before {
+    opacity: 0;
+}
+
+.menu__item:hover .team::after {
+    opacity: 1;
 }
 
 .menu__link:hover {
     color: black;
+    transition: .3s;
 }
 
-.visited {
+.menu__link.visited {
     color: black;
 }
 
@@ -69,45 +140,38 @@
 /*-----     Т А Р И Ф Ы     -----*/
 
 .tariff {
-    margin-bottom: 110px;
+    border: 2px solid rgb(232, 232, 236);
+    margin-right: 23px;
+    margin-bottom: 30px;
+    padding-top: 28px;
+    padding-left: 40px;
+    padding-bottom: 40px;
+    padding-right: 40px;
+    max-width: 270px;
+    max-height: 372px;
 }
 
 .tariff__main-title {
     font-family: Roboto;
-    font-size: 49px;
+    font-size: 18px;
     font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
     color: #262424;
     margin-top: 0px;
-    margin-bottom: 70px;
-}
-
-.tariff__options {
-    display: flex;
-    justify-content: space-between;
+    margin-bottom: 33px;
 }
 
 .tariff__opt-variation {
-    width: 190px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.tariff__icon {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #5972b1;
-    border-radius: 50%;
-    margin-bottom: 35px;
-    width: 70px;
-    height: 70px;
-}
-
 .tariff__name {
     font-family: Roboto;
-    font-size: 15px;
+    font-size: 12px;
     font-weight: bold;
     text-transform: uppercase;
     text-align: center;
@@ -115,18 +179,17 @@
     margin-top: 0;
     margin-left: 0;
     margin-right: 0;
-    margin-bottom: 25px;
+    margin-bottom: 33px;
 }
 
 .tariff__description {
-    vertical-align: middle;
-    margin-bottom: 35px;
+    margin-bottom: 28px;
 }
 
 .tariff__description p {
     text-align: center;
     font-family: Roboto;
-    font-size: 18px;
+    font-size: 17px;
     margin-top: 0;
     margin-bottom: 20px;
 }
@@ -138,7 +201,7 @@
 .description__text {
     list-style-type: square;
     font-family: Roboto;
-    font-size: 18px;
+    font-size: 17px;
     text-align: left;
     color: #262424;
 }
@@ -165,16 +228,20 @@
 
 /*-----     Н О В О С Т И     -----*/
 
+.news {
+    margin-bottom: 117px;
+}
+
 .single-news {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    margin-bottom: 60px;
-    border-bottom: 2px solid rgb(244, 244, 244);
+    max-width: 260px;
+    margin-right: 35px;
 }
 
 .single-news:last-child {
-    margin-bottom: 0;
-    border-bottom: none;
+    margin-right: 0;
 }
 
 .news__main-title {
@@ -189,7 +256,6 @@
 
 .news__box {
     display: flex;
-    flex-direction: column;
     list-style-type: none;
     margin-bottom: 50px;
 }
@@ -198,10 +264,12 @@
     display: flex;
     width: 185px;
     height: 185px;
-    margin-right: 20px;
+    margin-bottom: 48px;
 }
 
 .news__icon-img {
+    width: 100%;
+    height: 100%;
     justify-content: center;
     align-items: center;
     border-radius: 50%;
@@ -210,7 +278,6 @@
 .news__date {
     font-family: Roboto;
     font-size: 14px;
-    line-height: 21px;
     color: #656464;
     margin-bottom: 15px;
 }
@@ -222,13 +289,13 @@
     text-align: left;
     color: #262424;
     margin-top: 0;
-    margin-bottom: 25px;
+    margin-bottom: 15px;
 }
 
 .news__content p {
-    width: 650px;
+    max-width: 270px;
     font-family: Roboto;
-    font-size: 18px;
+    font-size: 16px;
     text-align: left;
     color: #262424;
 }

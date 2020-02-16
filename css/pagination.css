@@ -41,18 +41,20 @@
     color: #000;
 }
 
+.pagination__link:hover {
+    color: #3a5bbf;
+}
+
 .left {
     color: #bfbfbf;
+}
+
+.right:hover {
+    color: #3a5bbf;
 }
 
 .pagination .active {
     background-color: #5972b1;
     color: #fff;
     border-radius: 5px;
-}
-
-.pagination a:hover:not(.active) {
-    background-color: #fff;
-    border-radius: 5px;
-    color: #000;
 }

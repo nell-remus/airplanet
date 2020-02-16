@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/footer.css">
     <link rel="stylesheet" href="./css/pagination.css">
+    <link rel="stylesheet" href="./css/social.css">
 </head>
 
 <body>
@@ -24,7 +25,16 @@
                 </a>
                 <address class="contacts">
                     <a href="tel:88000039210" class="contacts__phone">8 (800) 00-392-10</a>
-                    <div class="contacts__workhours">График работы</div>
+                    <div class="dropdown">
+                        <a href="#" class="dropdown__link">График работы</a>
+                        <div class="dropdown__dropdown">
+                            <div class="dropdown__triangle"></div>
+                            <div class="dropdown__case">
+                                <div class="dropdown__workhours">пн-вс: 09:00-20:00</div>
+                                <div class="dropdown__lunchhours">обед: 14:00-14:30</div>
+                            </div>
+                        </div>
+                    </div>
                     </address>
             </div>
         </header>
@@ -33,38 +43,66 @@
         <div class="page">
             <!--     -----P A G E - C O N T E N T-----     -->
             <div class="page-content">
-                <!--     -----M E N U-----     -->
-                <aside class="sidebar">
-                    <nav class="menu">
-                        <ul class="menu__list">
-                            <li class="menu__item menu__item--icon--main">
-                                <a href="./index.html" class="menu__link">Главная</a>
+                <!--     -----L E F T - P A N E L-----     -->
+                <div class="left-panel">
+                    <!--     -----N O T I C E-----     -->
+                    <div class="notice">
+                        <p>Вопросы по бронированию <br>билетов в нашей <br>авиакомпании принимаются. <br>Для этого можно оставить <br><a href="#" class="request-page">заявку на сайте</a> или же <br>позвонить по номеру <br>круглосуточной поддержки <br>
+                            <a href="tel:88000039210" class="request-phone">8 (800) 00-392-10</a>
+                        </p>
+                    </div>
+                    <!--     -----N O T I C E-----     -->
+                    <!--      -----S O C I A L-----      -->
+                    <div class="social">
+                        <div class="socil-links__title">Наши социальные сети</div>
+                        <ul class="social-links__list">
+                            <li class="social-links">
+                                <a href="#" class="links">
+                                    <img src="./img/social-links/vk.png" alt="VK" class="links-pic">
+                                </a>
                             </li>
-                            <li class="menu__item menu__item--icon--feed">
-                                <a href="./feedback.html" class="menu__link visited">Отзывы</a>
+                            <li class="social-links">
+                                <a href="#" class="links">
+                                    <img src="./img/social-links/fb.png" alt="FB" class="links-pic">
+                                </a>
                             </li>
-                            <li class="menu__item menu__item--icon--team">
-                                <a href="./team.html" class="menu__link">Экипаж</a>
+                            <li class="social-links">
+                                <a href="#" class="links">
+                                    <img src="./img/social-links/twitter.png" alt="twitter" class="links-pic">
+                                </a>
+                            </li>
+                            <li class="social-links">
+                                <a href="#" class="links">
+                                    <img src="./img/social-links/mail.png" alt="mail" class="links-pic">
+                                </a>
                             </li>
                         </ul>
-                    </nav>
-                </aside>
-                <!--     -----M E N U-----     -->
+                    </div>
+                    <!--      -----S O C I A L-----      -->
+                </div>
+                <!--     -----L E F T - P A N E L-----     -->
                 <!--     -----M A I N-----     -->
                 <main class="main">
-                    <!--     -----B R E A D C R U M B S-----     -->
-                    <nav class="breadcrumbs">
-                        <ul class="breadcrumbs__menu">
-                            <li class="breadcrumbs__item">
-                                <a href="./index.html" class="breadcrumbs__link">Главная</a>
-
-                            </li>
-                            <li class="breadcrumbs__item">
-                                <a href="#" class="breadcrumbs__link active">Отзывы</a>
-                            </li>
-                        </ul>
-                    </nav>
-                    <!--     -----B R E A D C R U M B S-----     -->
+                    <!--     -----S I D E B A R-----     -->
+                    <aside class="sidebar">
+                        <nav class="menu">
+                            <ul class="menu__list">
+                                <li class="menu__item">
+                                    <a href="./index.html" class="menu__link">
+                                        <div class="link__icon main"></div>Главная</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a href="./feedback.html" class="menu__link visited">
+                                        <div class="link__icon feed"></div>Отзывы</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a href="./team.html" class="menu__link">
+                                        <div class="link__icon team"></div>Экипаж</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </aside>
+                    <!--     -----S I D E B A R-----     -->
                     <!--     -----F E E D B A C K-----     -->
                     <section class="feedback">
                         <h1 class="feedback__main-title">Отзывы</h1>
@@ -178,11 +216,7 @@
                 <!--     -----M A I N-----     -->
             </div>
             <!--     -----P A G E - C O N T E N T-----     -->
-            <!--     -----N O T I C E-----     -->
-            <div class="notice">
-                <p>Вопросы по бронированию билетов в нашей авиакомпании принимаются. Для этого можно оставить <a href="#" class="request-page">заявку на сайте</a> или же позвонить по номеру круглосуточной поддержки <a href="tel:88000039210" class="request-phone">8 (800) 00-392-10</a></p>
-            </div>
-            <!--     -----N O T I C E-----     -->
+
             <!--      ------F O R M------      -->
             <div class="form-container">
                 <div class="form">
@@ -213,7 +247,7 @@
                                         <div class="radio"><label class="switch-controls__elem"><input type="radio" name="showphoto" id="" class="switch-controls__radio">Нет</label></div>
                                     </div>
                                     <div class="form__buttons">
-                                        <button type="submit" class="btn">отправить</button>
+                                        <button type="submit" class="btn"> <div class="btn__text">отправить</div></button>
                                     </div>
                                 </div>
                             </div>
@@ -234,31 +268,7 @@
                 <div class="footer__img">
                     <img src="img/logo.png" alt="AIR PLANET" class="footer__img-pic">
                 </div>
-                <div class="footer__socil-links">
-                    <div class="socil-links__title">Наши социальные сети</div>
-                    <ul class="social-links__list">
-                        <li class="social-links">
-                            <a href="#" class="links">
-                                <img src="./img/social-links/vk.png" alt="VK" class="links-pic">
-                            </a>
-                        </li>
-                        <li class="social-links">
-                            <a href="#" class="links">
-                                <img src="./img/social-links/fb.png" alt="FB" class="links-pic">
-                            </a>
-                        </li>
-                        <li class="social-links">
-                            <a href="#" class="links">
-                                <img src="./img/social-links/twitter.png" alt="twitter" class="links-pic">
-                            </a>
-                        </li>
-                        <li class="social-links">
-                            <a href="#" class="links">
-                                <img src="./img/social-links/mail.png" alt="mail" class="links-pic">
-                            </a>
-                        </li>
-                    </ul>
-                </div>
+
             </div>
         </footer>
         <!--     -----F O O T E R-----     -->

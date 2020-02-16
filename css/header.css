@@ -9,7 +9,7 @@
 
 .container {
     display: flex;
-    width: 1100px;
+    width: 1200px;
     justify-content: space-between;
     align-items: center;
 }
@@ -27,8 +27,57 @@
     text-decoration: none;
 }
 
-.contacts__workhours {
+.dropdown {
+    position: relative;
+}
+
+.dropdown:hover .dropdown__dropdown {
+    display: block;
+}
+
+.dropdown__dropdown {
+    position: absolute;
+    display: none;
+}
+
+.dropdown__triangle {
+    border: 13px solid transparent;
+    width: 0px;
+    height: 0px;
+    margin-left: 136px;
+    border-bottom-color: #fff;
+}
+
+.dropdown__case {
+    padding: 20px;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.2);
+    width: 164px;
+    height: 81px;
+    border-radius: 3px;
+}
+
+.dropdown__workhours {
+    font-family: "Roboto";
+    font-size: 14px;
+    color: #5972b1;
+    font-weight: bold;
+    margin-bottom: 13px;
+}
+
+.dropdown__lunchhours {
+    font-family: "Roboto";
+    font-size: 14px;
+    color: black;
+}
+
+.dropdown__link {
     color: #fff;
     font-size: 14px;
-    text-decoration: none;
+    opacity: 0.5;
+}
+
+.dropdown__link:hover {
+    opacity: 1;
 }

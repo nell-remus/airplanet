@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/footer.css">
     <link rel="stylesheet" href="./css/pagination.css">
+    <link rel="stylesheet" href="./css/social.css">
 </head>
 
 <body>
@@ -22,119 +23,100 @@
                 </a>
                 <address class="contacts">
                     <a href="tel:88000039210" class="contacts__phone">8 (800) 00-392-10</a>
-                    <div class="contacts__workhours">График работы</div>
+                    <div class="dropdown">
+                        <a href="#" class="dropdown__link">График работы</a>
+                        <div class="dropdown__dropdown">
+                            <div class="dropdown__triangle"></div>
+                            <div class="dropdown__case">
+                                <div class="dropdown__workhours">пн-вс: 09:00-20:00</div>
+                                <div class="dropdown__lunchhours">обед: 14:00-14:30</div>
+                            </div>
+                        </div>
+                    </div>
                     </address>
             </div>
         </header>
         <div class="wrapper__content">
-            <!--     -----S I D E B A R-----     -->
-            <aside class="sidebar">
-                <nav class="menu">
-                    <ul class="menu__list">
-                        <li class="menu__item menu__item--icon--main">
-                            <a href="./index.html" class="menu__link visited">Главная</a>
+            <div class="left-panel">
+                <!--      -----T A R I F F-----      -->
+                <div class="tariff">
+                    <h1 class="tariff__main-title">Топ-тариф</h1>
+                    <div class="tariff__opt-variation">
+                        <div class="tariff__content">
+                            <h2 class="tariff__name">Стандарт</h2>
+                            <div class="tariff__description">
+                                <p>Создан для вашего комфортного отдыха</p>
+                                <ul class="description">
+                                    <li class="description__text">Питание включено</li>
+                                    <li class="description__text">Багаж (5 кг)</li>
+                                    <li class="description__text">Детское кресло</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="tariff__price">
+                            <div class="price-currency">&#36;</div>
+                            <div class="price">19</div>
+                        </div>
+                    </div>
+                    <!--тариф, первый квадрат конец-->
+                </div>
+                <!--      -----T A R I F F-----      -->
+                <!--      -----S O C I A L-----      -->
+                <div class="social">
+                    <div class="socil-links__title">Наши социальные сети</div>
+                    <ul class="social-links__list">
+                        <li class="social-links">
+                            <a href="#" class="links">
+                                <img src="./img/social-links/vk.png" alt="VK" class="links-pic">
+                            </a>
                         </li>
-                        <li class="menu__item menu__item--icon--feed">
-                            <a href="./feedback.html" class="menu__link">Отзывы</a>
+                        <li class="social-links">
+                            <a href="#" class="links">
+                                <img src="./img/social-links/fb.png" alt="FB" class="links-pic">
+                            </a>
                         </li>
-                        <li class="menu__item menu__item--icon--team">
-                            <a href="./team.html" class="menu__link">Экипаж</a>
+                        <li class="social-links">
+                            <a href="#" class="links">
+                                <img src="./img/social-links/twitter.png" alt="twitter" class="links-pic">
+                            </a>
+                        </li>
+                        <li class="social-links">
+                            <a href="#" class="links">
+                                <img src="./img/social-links/mail.png" alt="mail" class="links-pic">
+                            </a>
                         </li>
                     </ul>
-                </nav>
-            </aside>
-            <!--     -----S I D E B A R-----     -->
+                </div>
+                <!--      -----S O C I A L-----      -->
+            </div>
             <!--     -----P A G E   C O N T E N T-----     -->
             <main class="page-content">
+                <!--     -----S I D E B A R-----     -->
+                <aside class="sidebar">
+                    <nav class="menu">
+                        <ul class="menu__list">
+                            <li class="menu__item">
+                                <a href="./index.html" class="menu__link visited">
+                                    <div class="link__icon main"></div>Главная</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="./feedback.html" class="menu__link">
+                                    <div class="link__icon feed"></div>Отзывы</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="./team.html" class="menu__link">
+                                    <div class="link__icon team"></div>Экипаж</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </aside>
+                <!--     -----S I D E B A R-----     -->
                 <div class="main-block">
                     <!--основная картинка-->
                     <div class="banner">
                         <img src="./img/banner.png" alt="" class="banner__img">
                     </div>
                     <!--основная картинка-->
-
-                    <!--кейс 'ТАРИФЫ' начало-->
-                    <section class="tariff">
-                        <h1 class="tariff__main-title">Тарифы</h1>
-                        <ul class="tariff__options">
-                            <!--тариф, первый квадрат начало-->
-                            <li class="tariff__opt-variation">
-                                <div class="tariff__icon">
-                                    <!--первая область (картинка)-->
-                                    <img src="./img/tariff/flower.png" alt="" class="tariff__icon-img">
-                                </div>
-                                <div class="tariff__content">
-                                    <!--вторая область (текст)-->
-                                    <h2 class="tariff__name">Стандарт</h2>
-                                    <div class="tariff__description">
-                                        <p>Создан для вашего комфортного отдыха</p>
-                                        <ul class="description">
-                                            <li class="description__text">Питание включено</li>
-                                            <li class="description__text">Багаж (5 кг)</li>
-                                            <li class="description__text">Детское кресло</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="tariff__price">
-                                    <div class="price-currency">&#36;</div>
-                                    <div class="price">19</div>
-                                </div>
-                            </li>
-                            <!--тариф, первый квадрат конец-->
-
-                            <!--тариф, второй квадрат начало-->
-                            <li class="tariff__opt-variation">
-                                <div class="tariff__icon">
-                                    <!--первая область (картинка)-->
-                                    <img src="./img/tariff/star.png" alt="" class="tariff__icon-img">
-                                </div>
-                                <div class="tariff__content">
-                                    <!--вторая область (текст)-->
-                                    <h2 class="tariff__name">Премиум</h2>
-                                    <div class="tariff__description">
-                                        <p>Для любителей хороших впечатлений</p>
-                                        <ul class="description">
-                                            <li class="description__text">Питание включено</li>
-                                            <li class="description__text">Багаж (5 кг)</li>
-                                            <li class="description__text">Детское кресло</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="tariff__price">
-                                    <div class="price-currency">&#36;</div>
-                                    <div class="price">39</div>
-                                </div>
-                            </li>
-                            <!--тариф, второй квадрат конец-->
-
-                            <!--тариф, третий квадрат начало-->
-                            <li class="tariff__opt-variation">
-                                <div class="tariff__icon">
-                                    <!--первая область (картинка)-->
-                                    <img src="./img/tariff/painter-palette.png" alt="" class="tariff__icon-img">
-                                </div>
-                                <div class="tariff__content">
-                                    <!--вторая область (текст)-->
-                                    <h2 class="tariff__name">Бизнес</h2>
-                                    <div class="tariff__description">
-                                        <p>Всё самое лучшее и незабываемое</p>
-                                        <ul class="description">
-                                            <li class="description__text">Питание включено</li>
-                                            <li class="description__text">Багаж (5 кг)</li>
-                                            <li class="description__text">Детское кресло</li>
-                                        </ul>
-                                    </div>
-                                    <div class="tariff__price">
-                                        <div class="price-currency">&#36;</div>
-                                        <div class="price">99</div>
-                                    </div>
-
-                                </div>
-                            </li>
-                            <!--тариф, третий квадрат конец-->
-                        </ul>
-                    </section>
-                    <!--кейс 'ТАРИФЫ' конец-->
 
                     <!--кейс 'НОВОСТИ' начало-->
                     <section class="news">
@@ -193,51 +175,13 @@
                         </ul>
                     </section>
                     <!--кейс 'НОВОСТИ' конец-->
-                    <!--кейс 'нумерация страниц' начало-->
-                    <div class="pagination">
-                        <div class="pagination__display">
-                            Страница 1 из 7
-                        </div>
-                        <div class="pagination__controlls">
-                            <div class="pagination__item--left">
-                                <a href="#" class="pagination__link left">&lt;</a>
-                            </div>
-                            <ul class="pagination__list">
-                                <li class="pagination__item">
-                                    <a href="#" class="pagination__link active">1</a>
-                                </li>
-                                <li class="pagination__item">
-                                    <a href="#" class="pagination__link">2</a>
-                                </li>
-                                <li class="pagination__item">
-                                    <a href="#" class="pagination__link">3</a>
-                                </li>
-                                <li class="pagination__item">
-                                    <a href="#" class="pagination__link">4</a>
-                                </li>
-                                <li class="pagination__item">
-                                    <a href="#" class="pagination__link">5</a>
-                                </li>
-                                <li class="pagination__item">
-                                    <a href="#" class="pagination__link">6</a>
-                                </li>
-                                <li class="pagination__item">
-                                    <a href="#" class="pagination__link">7</a>
-                                </li>
-                            </ul>
-                            <div class="pagination__item">
-                                <a href="#" class="pagination__link right">&gt;</a>
-                            </div>
-                        </div>
 
-                    </div>
-                    <!--кейс 'нумерация страниц' конец-->
                 </div>
             </main>
             <!--     -----P A G E   C O N T E N T-----     -->
         </div>
 
-        <!--кейс нижний колонтитул начало-->
+        <!--     -----F O O T E R-----      -->
         <footer class="footer">
             <div class="container">
                 <div class="footer__autor">
@@ -247,34 +191,10 @@
                 <div class="footer__img">
                     <img src="img/logo.png" alt="AIR PLANET" class="footer__img-pic">
                 </div>
-                <div class="footer__socil-links">
-                    <div class="socil-links__title">Наши социальные сети</div>
-                    <ul class="social-links__list">
-                        <li class="social-links">
-                            <a href="#" class="links">
-                                <img src="./img/social-links/vk.png" alt="VK" class="links-pic">
-                            </a>
-                        </li>
-                        <li class="social-links">
-                            <a href="#" class="links">
-                                <img src="./img/social-links/fb.png" alt="FB" class="links-pic">
-                            </a>
-                        </li>
-                        <li class="social-links">
-                            <a href="#" class="links">
-                                <img src="./img/social-links/twitter.png" alt="twitter" class="links-pic">
-                            </a>
-                        </li>
-                        <li class="social-links">
-                            <a href="#" class="links">
-                                <img src="./img/social-links/mail.png" alt="mail" class="links-pic">
-                            </a>
-                        </li>
-                    </ul>
-                </div>
+
             </div>
         </footer>
-        <!--кейс нижний колонтитул конец-->
+        <!--     -----F O O T E R-----      -->
     </div>
 </body>
 
