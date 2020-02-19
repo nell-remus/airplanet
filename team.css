@@ -1,0 +1,641 @@
+.page {
+    display: flex;
+    justify-content: center;
+    max-width: 1200;
+    padding-top: 25px;
+}
+
+.left-panel {
+    max-width: 270px;
+    margin-right: 20px;
+}
+
+.sidebar {
+    margin-bottom: 28px;
+}
+
+.menu__list {
+    text-decoration: none;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.menu__item {
+    list-style-type: none;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: "Roboto";
+    color: rgb(89, 114, 177);
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 2px;
+    margin-right: 110px;
+    max-width: 140px;
+    max-height: 20px;
+}
+
+.menu__item:last-child {
+    margin-right: 0;
+}
+
+.menu__item,
+.menu__link {
+    text-decoration: none;
+    color: #5972b1;
+}
+
+.link__icon {
+    width: 23px;
+    height: 18px;
+    margin-right: 20px;
+    position: relative;
+    display: inline-block;
+}
+
+.link__icon.main::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: 23px;
+    height: 18px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: url('./img/menubar/menu_sprites.png') -10px -48px;
+    opacity: 1;
+    transition: .3s;
+}
+
+.link__icon.main::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: 23px;
+    height: 18px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: url('./img/menubar/menu_sprites.png') -53px -48px;
+    opacity: 0;
+    transition: .3s;
+}
+
+.menu__item:hover .link__icon.main::before {
+    opacity: 0;
+}
+
+.menu__item:hover .link__icon.main::after {
+    opacity: 1;
+}
+
+.link__icon.feed::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: 23px;
+    height: 18px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: url('./img/menubar/menu_sprites.png') -10px -10px;
+    opacity: 1;
+    transition: .3s;
+}
+
+.link__icon.feed::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: 23px;
+    height: 18px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: url('./img/menubar/menu_sprites.png') -53px -10px;
+    opacity: 0;
+    transition: .3s;
+}
+
+.menu__item:hover .link__icon.feed::before {
+    opacity: 0;
+}
+
+.menu__item:hover .link__icon.feed::after {
+    opacity: 1;
+}
+
+.link__icon.team {
+    margin: 0px 15px 0px 0px;
+}
+
+.link__icon.team::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: 23px;
+    height: 18px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: url('./img/menubar/menu_sprites.png') -96px -10px;
+}
+
+.menu__link:hover {
+    color: black;
+    transition: .3s;
+}
+
+.menu__link.visited {
+    color: black;
+}
+
+
+/*     ------T E A M-----     */
+
+.team {
+    font-family: "Roboto";
+    margin-bottom: 50px;
+}
+
+.team__staff {
+    max-width: 860px;
+    display: flex;
+    list-style-type: none;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: top;
+}
+
+.staff__person {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.person__icon {
+    display: inline-block;
+    position: relative;
+    width: 168px;
+    height: 168px;
+    margin-bottom: 18px;
+}
+
+.person__icon.alex::after {
+    content: "Алексей";
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: "Roboto";
+    font-size: 24px;
+    line-height: 160px;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    width: 162px;
+    height: 162px;
+    background-color: rgb(89, 115, 177, 0.5);
+    border-radius: 50%;
+    border: 3px solid #637bb6;
+}
+
+.person__icon.alex::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 162px;
+    height: 162px;
+    background: url(./img/team/team_sprites.png) -403px -10px;
+    border-radius: 50%;
+}
+
+.person__icon.inna::after {
+    content: "Инна";
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: "Roboto";
+    font-size: 24px;
+    line-height: 160px;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    width: 162px;
+    height: 162px;
+    background-color: rgb(89, 115, 177, 0.5);
+    border-radius: 50%;
+    border: 3px solid #637bb6;
+}
+
+.person__icon.inna::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 162px;
+    height: 162px;
+    background: url(./img/team/team_sprites.png) -10px -209px;
+    border-radius: 50%;
+}
+
+.person__icon.boris::after {
+    content: "Борис";
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: "Roboto";
+    font-size: 24px;
+    line-height: 160px;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    width: 162px;
+    height: 162px;
+    background-color: rgb(89, 115, 177, 0.5);
+    border-radius: 50%;
+    border: 3px solid #637bb6;
+}
+
+.person__icon.boris::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 162px;
+    height: 162px;
+    background: url(./img/team/team_sprites.png) -10px -10px;
+    border-radius: 50%;
+}
+
+.person__icon.elina::after {
+    content: "Элина";
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: "Roboto";
+    font-size: 24px;
+    line-height: 160px;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    width: 162px;
+    height: 162px;
+    background-color: rgb(89, 115, 177, 0.5);
+    border-radius: 50%;
+    border: 3px solid #637bb6;
+}
+
+.person__icon.elina::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 162px;
+    height: 162px;
+    background: url(./img/team/team_sprites.png) -403px -193px;
+    border-radius: 50%;
+}
+
+.person__icon.elena::after {
+    content: "Елена";
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: "Roboto";
+    font-size: 24px;
+    line-height: 160px;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    width: 162px;
+    height: 162px;
+    background-color: rgb(89, 115, 177, 0.5);
+    border-radius: 50%;
+    border: 3px solid #637bb6;
+}
+
+.person__icon.elena::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 162px;
+    height: 162px;
+    background: url(./img/team/team_sprites.png) -199px -209px;
+    border-radius: 50%;
+}
+
+.person__icon.yuri::after {
+    content: "Юрий";
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: "Roboto";
+    font-size: 24px;
+    line-height: 160px;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    width: 162px;
+    height: 162px;
+    background-color: rgb(89, 115, 177, 0.5);
+    border-radius: 50%;
+    border: 3px solid #637bb6;
+}
+
+.person__icon.yuri::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 162px;
+    height: 162px;
+    background: url(./img/team/team_sprites.png) -209px -10px;
+    border-radius: 50%;
+}
+
+.person__discription p {
+    width: 260px;
+    text-align: center;
+}
+
+.person__name {
+    font-size: 20px;
+    text-align: center;
+}
+
+.person__position {
+    text-align: center;
+}
+
+
+/*     ------P A R T N E R-----     */
+
+.partner {
+    display: flex;
+    flex-direction: column;
+    max-width: 270px;
+    max-height: 660px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border: 2px solid #f4f4f6;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.partner__main-title {
+    font-size: 18px;
+    font-family: "Roboto";
+    margin-bottom: 35px;
+}
+
+.partner__list {
+    list-style-type: none;
+}
+
+.list__links {
+    position: relative;
+    height: 50px;
+    margin-bottom: 20px;
+}
+
+.partner__links.siberian::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    height: 49px;
+    width: 101px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: url(./img/partner/partner_sprites.png) -131px -148px;
+    opacity: 1;
+    transition: .3s;
+}
+
+.partner__links.siberian::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    height: 49px;
+    width: 101px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: url(./img/partner/partner_sprites.png) -10px -148px;
+    opacity: 0;
+    transition: .3s;
+}
+
+.list__links:hover .partner__links.siberian::before {
+    opacity: 0;
+}
+
+.list__links:hover .partner__links.siberian::after {
+    opacity: 1;
+}
+
+.partner__links.ural::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: 62px;
+    height: 49px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: url(./img/partner/partner_sprites.png) -279px -122px;
+    opacity: 1;
+    transition: .3s;
+}
+
+.partner__links.ural::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: 62px;
+    height: 49px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: url(./img/partner/partner_sprites.png) -279px -53px;
+    opacity: 0;
+    transition: .3s;
+}
+
+.list__links:hover .partner__links.ural::before {
+    opacity: 0;
+}
+
+.list__links:hover .partner__links.ural::after {
+    opacity: 1;
+}
+
+.partner__links.bmpcompany::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: 121px;
+    height: 23px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: url(./img/partner/partner_sprites.png) -279px -10px;
+    opacity: 1;
+    transition: .3s;
+}
+
+.partner__links.bmpcompany::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: 121px;
+    height: 23px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: url(./img/partner/partner_sprites.png) -10px -217px;
+    opacity: 0;
+    transition: .3s;
+}
+
+.list__links:hover .partner__links.bmpcompany::before {
+    opacity: 0;
+}
+
+.list__links:hover .partner__links.bmpcompany::after {
+    opacity: 1;
+}
+
+.partner__links.oneair::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: 107px;
+    height: 48px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: url(./img/partner/partner_sprites.png) -152px -78px;
+    opacity: 1;
+    transition: .3s;
+}
+
+.partner__links.oneair::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: 107px;
+    height: 48px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: url(./img/partner/partner_sprites.png) -152px -10px;
+    opacity: 0;
+    transition: .3s;
+}
+
+.list__links:hover .partner__links.oneair::before {
+    opacity: 0;
+}
+
+.list__links:hover .partner__links.oneair::after {
+    opacity: 1;
+}
+
+.partner__links.tetra::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: 122px;
+    height: 49px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: url(./img/partner/partner_sprites.png) -10px -79px;
+    opacity: 1;
+    transition: .3s;
+}
+
+.partner__links.tetra::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: 122px;
+    height: 49px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: url(./img/partner/partner_sprites.png) -10px -10px;
+    opacity: 0;
+    transition: .3s;
+}
+
+.list__links:hover .partner__links.tetra::before {
+    opacity: 0;
+}
+
+.list__links:hover .partner__links.tetra::after {
+    opacity: 1;
+}
+
+.partner__links.bingair::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: 35px;
+    height: 49px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: url(./img/partner/partner_sprites.png) -361px -122px;
+    opacity: 1;
+    transition: .3s;
+}
+
+.partner__links.bingair::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: 35px;
+    height: 49px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: url(./img/partner/partner_sprites.png) -361px -53px;
+    opacity: 0;
+    transition: .3s;
+}
+
+.partner__links:hover .bingair__links.bingair::before {
+    opacity: 0;
+}
+
+.partner__links:hover .bingair__links.bingair::after {
+    opacity: 1;
+}

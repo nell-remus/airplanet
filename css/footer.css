@@ -1,0 +1,36 @@
+.footer {
+    display: flex;
+    justify-content: center;
+    background-color: #5972b1;
+    padding-left: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.container {
+    display: flex;
+    width: 1200px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__autor {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    max-width: 250px;
+}
+
+.autor__message,
+.autor__name {
+    font-family: Roboto;
+    font-size: 14px;
+    color: #fff;
+}
+
+.autor__message-link,
+.autor__name-link {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
